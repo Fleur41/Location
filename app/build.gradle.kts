@@ -43,10 +43,14 @@ android {
 
 dependencies {
 
+    //Google play service
+    implementation(libs.play.services.location)
     //Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
 
+    //Accompanist
+    implementation(libs.accompanist.permissions)
     // hilt navigation
     implementation(libs.androidx.hilt.navigation.compose)
 
